@@ -1,0 +1,350 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.board {
+	width: 400px;
+	height: 600px;
+	margin: 0 auto;
+	background: #67D8F6;
+    cursor: url('rocket.png') 35 0, pointer;
+    text-align: center;
+    position: relative;
+}
+
+.board h1 {
+	font-family: Georgia;
+	font-size: 28px;
+	color: #444;
+	text-shadow: 1px 1px 1px #fff;
+	padding-top: 10px;
+}
+
+.board #status {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-size: 14px;
+}
+
+.board #status span.active {
+	display: none;
+}
+
+.board #status span.inactive {
+	display: inline;
+}
+
+.board:hover #status span.active {
+	display: inline;
+}
+
+.board:hover #status span.inactive {
+	display: none;
+}
+
+.cloud {
+    background: #fff;
+    border-radius: 40px 40px 16px 16px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 15px;
+    position: absolute;
+    width: 30px;
+    top: -50%;
+    left: 0;
+    /*box-shadow: 4px 4px 4px #ccc;*/
+}
+.cloud:before {
+    background: #fff;
+    border-radius: 80px 80px 16px 16px;
+    content: "";
+    height: 30px;
+    margin-top: -10px;
+    position: absolute;
+    width: 50px;
+    /*box-shadow: 4px 4px 4px #ccc;*/
+}
+.cloud:after {
+    background: #fff;
+    border-radius: 40px 40px 16px 16px;
+    content: "";
+    height: 15px;
+    margin-left: 40px;
+    margin-top: 5px;
+    position: absolute;
+    width: 20px;
+    /*box-shadow: 4px 4px 4px #ccc;*/
+}
+
+.cloudBig {
+	height: 30px;
+	width: 40px;
+}
+
+.cloudBig:before {
+	height: 60px;
+	width: 100px;
+	margin-top: -30px;
+}
+
+.cloudBig:after {
+	height: 40px;
+	width: 60px;
+	margin-top: -10px;
+	margin-left: 80px;
+}
+
+.board .cloud:hover{
+	border-radius: 0;
+	margin: 0;
+    height:600px;
+    width:400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background: #ff0000;
+    overflow: visible;
+    cursor: not-allowed;
+    animation: animation1 0s 0s linear !important;
+    animation: animation2 0s 0s linear !important;
+    animation: animation3 0s 0s linear !important;
+    animation: animation4 0s 0s linear !important;
+    animation: animation5 0s 0s linear !important;
+    animation: animation6 0s 0s linear !important;
+    animation: animation7 0s 0s linear !important;
+    animation: animation8 0s 0s linear !important;
+    animation: animation9 0s 0s linear !important;
+    animation: animation10 0s 0s linear !important;
+  }
+.board .cloud:hover:before{
+	background: red;
+	content: "You've destroyed your spaceship on a cloud, GAME OVER! Hover out your mouse and try again!";
+	top: 100px;
+	left: 0;
+	width: 400px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #aaa;
+	box-shadow: none;
+}
+.board .cloud:hover:after{
+	display: none;
+}
+
+.board:hover #cloud_01 {
+	animation: animation1 6s 0s linear;
+}
+.board:hover #cloud_02 {
+	animation: animation2 5s 2s linear;
+}
+.board:hover #cloud_03 {
+	animation: animation3 3s 3s linear;
+}
+.board:hover #cloud_04 {
+	animation: animation4 6s 4s linear;
+}
+.board:hover #cloud_05 {
+	animation: animation5 4s 5s linear;
+}
+.board:hover #cloud_06 {
+	animation: animation2 3s 6s linear;
+}
+.board:hover #cloud_07 {
+	animation: animation7 2s 8s linear;
+}
+.board:hover #cloud_08 {
+	animation: animation4 5s 8s linear;
+}
+.board:hover #cloud_09 {
+	animation: animation8 3s 9s linear;
+}
+.board:hover #cloud_10 {
+	animation: animation6 4s 10s linear;
+}
+.board:hover #cloud_11 {
+	animation: animation1 6s 10s linear;
+}
+.board:hover #cloud_12 {
+	animation: animation6 4s 11s linear;
+}
+.board:hover #cloud_13 {
+	animation: animation2 8s 12s linear;
+}
+.board:hover #cloud_14 {
+	animation: animation9 4s 13s linear;
+}
+.board:hover #cloud_15 {
+	animation: animation3 5s 13s linear;
+}
+.board:hover #cloud_16 {
+	animation: animation10 7s 14s linear;
+}
+.board:hover #cloud_17 {
+	animation: animation7 3s 15s linear;
+}
+.board:hover #cloud_18 {
+	animation: animation3 5s 16s linear;
+}
+.board:hover #cloud_19 {
+	animation: animation6 4s 16s linear;
+}
+.board:hover #cloud_20 {
+	animation: animation1 3s 17s linear;
+}
+.board:hover #cloud_21 {
+	animation: animation2 4s 17s linear;
+}
+.board:hover #cloud_22 {
+	animation: animation1 5s 18s linear;
+}
+.board:hover #cloud_23 {
+	animation: animation4 9s 19s linear;
+}
+.board:hover #cloud_24 {
+	animation: animation9 2s 20s linear;
+}
+.board:hover #cloud_25 {
+	animation: animation7 3s 20s linear;
+}
+.board:hover #cloud_26 {
+	animation: animation1 5s 20s linear;
+}
+.board:hover #cloud_27 {
+	animation: animation9 6s 21s linear;
+}
+.board:hover #cloud_28 {
+	animation: animation3 3s 22s linear;
+}
+.board:hover #cloud_29 {
+	animation: animation6 4s 23s linear;
+}
+.board:hover #cloud_30 {
+	animation: animation4 5s 24s linear;
+}
+.board:hover #cloud_31 {
+	animation: animation9 4s 24s linear;
+}
+.board:hover #cloud_32 {
+	animation: animation6 2s 25s linear;
+}
+.board:hover #cloud_33 {
+	animation: animation3 3s 26s linear;
+}
+.board:hover #cloud_34 {
+	animation: animation4 5s 26s linear;
+}
+.board:hover #cloud_35 {
+	animation: animation10 8s 27s linear;
+}
+.board:hover #cloud_36 {
+	animation: animation2 3s 27s linear;
+}
+.board:hover #cloud_37 {
+	animation: animation7 2s 28s linear;
+}
+.board:hover #cloud_38 {
+	animation: animation4 5s 28s linear;
+}
+.board:hover #cloud_39 {
+	animation: animation1 3s 29s linear;
+}
+.board:hover #cloud_40 {
+	animation: animation6 4s 30s linear;
+}
+.board:hover #cloud_41 {
+	animation: animation9 4s 24s linear;
+}
+.board:hover #cloud_42 {
+	animation: animation6 2s 25s linear;
+}
+.board:hover #cloud_43 {
+	animation: animation3 3s 26s linear;
+}
+.board:hover #cloud_44 {
+	animation: animation4 5s 26s linear;
+}
+.board:hover #cloud_45 {
+	animation: animation10 8s 27s linear;
+}
+.board:hover #cloud_46 {
+	animation: animation2 3s 27s linear;
+}
+.board:hover #cloud_47 {
+	animation: animation7 2s 28s linear;
+}
+.board:hover #cloud_48 {
+	animation: animation4 5s 28s linear;
+}
+.board:hover #cloud_49 {
+	animation: animation1 3s 29s linear;
+}
+.board:hover #cloud_50 {
+	animation: animation6 4s 30s linear;
+}
+
+@keyframes animation1 {
+	0% { left: 260px; top: -10%; }
+	100% { left: 260px; top: 100%; }
+}
+@keyframes animation2 {
+	0% { left: 50px; top: -10%; }
+	100% { left: 50px; top: 100%; }
+}
+@keyframes animation3 {
+	0% { left: 150px; top: -10%; }
+	100% { left: 200px; top: 100%; }
+}
+@keyframes animation4 {
+	0% { left: 300px; top: -10%; }
+	100% { left: 200px; top: 100%; }
+}
+@keyframes animation5 {
+	0% { left: 150px; top: -10%; }
+	100% { left: 150px; top: 100%; }
+}
+@keyframes animation6 {
+	0% { left: 50px; top: -10%; }
+	100% { left: 250px; top: 100%; }
+}
+@keyframes animation7 {
+	0% { left: 300px; top: -10%; }
+	100% { left: 0px; top: 100%; }
+}
+@keyframes animation8 {
+	0% { left: 0px; top: -10%; }
+	100% { left: 300px; top: 100%; }
+}
+@keyframes animation9 {
+	0% { left: 200px; top: -10%; }
+	100% { left: 150px; top: 100%; }
+}
+@keyframes animation10 {
+	0% { left: 250px; top: -10%; }
+	100% { left: 100px; top: 100%; }
+}
+
+@keyframes animation99 {
+	0% { left: 50px; top: -40%; }
+	100% { left: 50px; top: 30%; }
+}
+
+.board #finish {
+	position: absolute;
+	top: -40%;
+	left: 50px;
+	text-align: center;
+	display: none;
+	width: 200px;
+	padding: 20px 50px;
+	background: #fff;
+	box-shadow: 4px 4px 4px #ccc;
+	border-radius: 10px;
+}
+
+.board:hover #finish {
+	animation: animation99 5s 30s linear;
+	animation-fill-mode: forwards;
+	display: block;
+}
